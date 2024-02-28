@@ -1,27 +1,27 @@
 const arrayTitleBook = [
     {
         title: "Javascript",
-        price: "25"
+        price: 25
     },
     {
         title: "PHP",
-        price: "15"
+        price: 15
     },
     {
         title: "Java",
-        price: "30"
+        price: 30
     },
     {
         title: "Elixir",
-        price: "50"
+        price: 50
     },
     {
         title: "Go",
-        price: "45"
+        price: 45
     },
     {
         title: "Python",
-        price: "20"
+        price: 20
     }
 ];
 

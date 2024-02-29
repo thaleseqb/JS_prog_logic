@@ -1,4 +1,4 @@
-const arrayObj = require('./testing');
+const arrayObj = require('./library-array');
 
 function selectLower(arrayOfObjects, initialPosition) {
     // It is not interesting make the verification over and over again.

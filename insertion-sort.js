@@ -1,6 +1,5 @@
 const arrayObject = require('./library-array');
 
-
 // -- My interpretation 
 function myInsertionSort(arrayObj, property) {
     for (let forIndex = 0; forIndex < arrayObj.length; forIndex++) {
@@ -21,4 +20,18 @@ function myInsertionSort(arrayObj, property) {
 
 console.log(myInsertionSort(arrayObject, 'price'))
 
+function instInsertionSort (arrayObj, property) {
+    for (let forIndex = 0; forIndex < arrayObj.length; forIndex++) {
+        let curIdx = forIndex;
+        while (curIdx > 0 && arrayObj[curIdx][property] < arrayObj[curIdx-1][property]) {
+            // swapping positions
+            const temp = arrayObj[curIdx];
+            arrayObj[curIdx] = arrayObj[curIdx-1];
+            arrayObj[curIdx-1] = temp;
+            curIdx--
+        };
+    };
+    return arrayObj
+};
 
+console.log(instInsertionSort(arrayObject, 'price'))
